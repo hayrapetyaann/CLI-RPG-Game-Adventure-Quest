@@ -16,6 +16,7 @@ public:
     virtual void displayStats() const = 0;
     virtual void takeDamage(int damage) = 0;
     std::string getName() const;
+    int getDefense() const;
 
     virtual ~Character() = default;
 };

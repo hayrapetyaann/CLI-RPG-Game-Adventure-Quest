@@ -28,6 +28,8 @@ public:
     void gainXP(int xp);
     int getLevel() const;
     int getXP() const;
+    const std::vector<std::string>& getInventory() const;
+    void displayInventory() const;  
 };
 
 #endif // HERO_H
