@@ -1,6 +1,6 @@
-CC = g++
+CC = g++ -std=c++20
 CFLAGS = -Iinclude
-OBJECTS = src/main.o src/Character.o src/GameWorld.o src/Hero.o src/Monster.o src/NPC.o src/QuestManager.o src/Utility.o
+OBJECTS = src/main.o src/Character.o src/GameWorld.o src/Hero.o src/Monster.o src/NPC.o src/QuestManager.o src/Utility.o src/Portal.o
 TARGET = AdventureQuest
 
 all: $(TARGET)
@@ -31,6 +31,9 @@ src/QuestManager.o: src/QuestManager.cpp
 
 src/Utility.o: src/Utility.cpp
 	$(CC) -c src/Utility.cpp -o src/Utility.o $(CFLAGS)
+
+src/Portal.o: src/Portal.cpp
+	$(CC) -c src/Portal.cpp -o src/Portal.o $(CFLAGS)
 
 clean:
 	rm -f $(OBJECTS) $(TARGET)
