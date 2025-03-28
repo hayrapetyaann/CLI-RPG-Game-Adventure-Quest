@@ -7,3 +7,7 @@ std::string Character::getName() const {
     return m_name;
 }
 
+int Character::getDefense() const {
+    return m_defense;
+}
+

@@ -5,7 +5,7 @@
 
 namespace Utility {
     int getIntInput(int min, int max) {
-        int input;
+        int input; 
         while (true) {
             std::cin >> input;
             if (std::cin.fail() || input < min || input > max) {
