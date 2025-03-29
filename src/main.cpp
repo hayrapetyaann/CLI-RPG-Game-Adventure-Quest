@@ -140,28 +140,6 @@ void combat(Hero* hero, Monster* monster, QuestManager& qm) {
     }
 }
 
-// void  changeLocation(std::string& currentLocation, Hero* hero, GameWorld& world) {
-//     std::cout << "\nCurrent Location: " << currentLocation << "\n";
-//     std::cout << "Choose a location:\n";
-//     std::cout << "1. Village\n";
-//     std::cout << "2. Dungeon\n";
-//     std::cout << "Choose an option (0 to cancel): ";
-//     int choice = Utility::getIntInput(0, 2);
-
-//     switch (choice) {
-//         case 1:
-//             currentLocation = "Village";
-//             std::cout << "You travel to Village.\n";
-//             break;
-//         case 2:
-//             currentLocation = "Dungeon";
-//             std::cout << "You travel to Dungeon.\n";
-//             break;
-//         case 0:
-//             std::cout << "You stay in " << currentLocation << ".\n";
-//             break;
-//     }
-// }
 void changeLocation(std::string& currentLocation, Hero* hero, GameWorld& world) {
     std::cout << "\nCurrent Location: " << currentLocation << "\n";
     std::cout << "Available portals:\n";
